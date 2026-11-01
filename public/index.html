@@ -98,8 +98,6 @@ section{padding:76px 0}
 .alt-contact{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:14px;position:relative}
 .btn-fb{background:#0a84ff;color:#fff}
 .btn-fb:hover{transform:translateY(-2px);box-shadow:0 10px 28px rgba(10,132,255,.4)}
-.btn-wa2{background:transparent;color:var(--green);border:1.5px solid var(--green)}
-.btn-wa2:hover{background:rgba(37,211,102,.12)}
 .fab.fb{bottom:92px;background:#0a84ff;box-shadow:0 10px 30px rgba(10,132,255,.5);animation:none}
 .footer-links{display:flex;flex-wrap:wrap;gap:8px 20px;margin-bottom:14px}
 .footer-links a{color:var(--gold)}
@@ -358,9 +356,8 @@ footer{padding:36px 0 110px;border-top:1px solid var(--line);color:var(--muted);
           <svg viewBox="0 0 32 32"><path d="M16 3C8.8 3 3 8.4 3 15.100c0 3.800 1.900 7.100 4.800 9.300V29l4.400-2.400c1.200.3 2.500.5 3.800.5 7.200 0 13-5.400 13-12.100S23.200 3 16 3zm1.400 16.300-3.300-3.500-6.400 3.500 7-7.400 3.400 3.500 6.300-3.500-7 7.400z"/></svg>
           Message on Messenger
         </a>
-        <a class="btn btn-wa2 wa2" href="#">WhatsApp: 0334 4155663</a>
       </div>
-      <span class="phone">or WhatsApp: <b>0334 4026363</b> · <b>0334 4155663</b></span>
+      <span class="phone">or WhatsApp: <b>0334 4155663</b></span>
     </div>
   </div>
 </section>
@@ -384,8 +381,7 @@ footer{padding:36px 0 110px;border-top:1px solid var(--line);color:var(--muted);
   <div class="wrap">
     <div class="risk"><i>⚠</i><div><strong>Risk warning:</strong> Trading involves substantial financial risk and may not be suitable for all investors. Past performance is not indicative of future results. Automated trading does not guarantee profit.</div></div>
     <div class="footer-links">
-      <a class="wa" href="#">WhatsApp 0334 4026363</a>
-      <a class="wa2" href="#">WhatsApp 0334 4155663</a>
+      <a class="wa" href="#">WhatsApp 0334 4155663</a>
       <a href="https://m.me/61595850579079" target="_blank" rel="noopener">Messenger</a>
       <a href="https://www.facebook.com/profile.php?id=61595850579079" target="_blank" rel="noopener">Facebook Page</a>
     </div>
@@ -402,7 +398,7 @@ footer{padding:36px 0 110px;border-top:1px solid var(--line);color:var(--muted);
 <div class="mbar"><a class="btn btn-wa wa" href="#">Request FREE Demo on WhatsApp</a></div>
 
 <script>
-  var NUMBER = "923344026363";
+  var NUMBER = "923344155663";
   var MSG = "Hello, I want a free demo of the XAUUSD Gold Trading Bot (MT5 Expert Advisor).";
   var url = "https://wa.me/" + NUMBER + "?text=" + encodeURIComponent(MSG);
   document.querySelectorAll("a.wa").forEach(function(a){
@@ -410,11 +406,6 @@ footer{padding:36px 0 110px;border-top:1px solid var(--line);color:var(--muted);
     a.addEventListener("click", function(){
       if (window.fbq) fbq("track", "Contact");   // Facebook Pixel event (if pixel added)
     });
-  });
-  var NUMBER2 = "923344155663";
-  document.querySelectorAll("a.wa2").forEach(function(a){
-    a.href = "https://wa.me/" + NUMBER2 + "?text=" + encodeURIComponent(MSG);
-    a.target = "_blank"; a.rel = "noopener";
   });
   document.querySelectorAll("a[data-fb]").forEach(function(a){
     a.addEventListener("click", function(){ if (window.fbq) fbq("track", "Contact"); });
